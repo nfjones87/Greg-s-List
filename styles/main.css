@@ -6,9 +6,6 @@ body {
 	font-family: "Roboto", Sans-Serif;
 }
 
-
-
-
 .nav {
 	height: 40px;
 	background-color: #EEEEEE;
@@ -20,26 +17,17 @@ body {
 	border: 1px solid #DDDDDD;
 }
 
-.wrapper {
-	position:relative;
-	padding-top: 75px;
-	padding-left: 75px;
-}
-
-.nav2  {
+.nav #logo,
+.nav ul li {
 	display: inline-block;
-	right: 10px;
-	position: absolute;
-	padding-top: 5px;
-	
 }
 
-.nav2 a {
+.nav ul a {
 	text-decoration: none;
+	padding: 0px 5px;
 }
 
-.logo {
-	
+#logo {
 	padding-left: 5px;
 	font-weight: normal;
 	position: fixed;
@@ -47,11 +35,62 @@ body {
 	top: 10px;
 }
 
+.nav ul  {
+	display: inline-block;
+	right: 10px;
+	bottom: 0px;
+	position: absolute;
+	padding-top: 5px;
+}
+
+.wrapper {
+	position:relative;
+	padding: 75px 30px;
+	margin: auto;
+	width: 100%;
+}
+
+.search-form input {
+	display: inline-block;
+}
+
+.search-form .search-button {
+
+}
+
+.search-form .search-text {
+
+}
+
+/*
+.search-form input {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  padding: 0 8px;
+  width: 400px;
+}
+
+
+/*.search-form .search-button {
+  font-size: 17px;
+  padding: 2px 6px 3px 6px;
+  background-color: white;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+	width: 37px;
+	height:30px;
+}
+*/
 .results {
 	margin-top: 25px;
 }
 
-.results div {
+.results ul li {
 	display: inline-block;
 	border: 1px solid black;
 	padding: 5px;
@@ -75,27 +114,4 @@ body {
 
 .date, .location {
 	color: #999;
-}
-
-
-.bar input {
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 30px;
-  height: 30px;
-  border: 1px solid #DDDDDD;
-  border-radius: 3px;
-  padding: 0 5px 0 8px;
-  width: 400px;
-}
-
-.bar .search-button {
-  font-size: 17px;
-  width: 37px;
-  height: auto;
-  padding: 2px 6px 3px 6px;
-  background-color: white;
-  border: 1px solid #DDDDDD;
-  border-radius: 3px;
 }
